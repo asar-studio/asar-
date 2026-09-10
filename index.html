@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أَثَر — asar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <span class="arabic-logo">أَثَر</span>
+        <span class="separator">|</span>
+        <span class="english-logo">asar</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button type="button" class="cart" onclick="openCart()">
+        🛒
+        <span id="cart-count">0</span>
+    </button>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <h1>أَثَر</h1>
+
+    <p>We create things that leave an أثر.</p>
+
+    <button
+        type="button"
+        class="main-button"
+        onclick="document.getElementById('works').scrollIntoView()">
+        Explore Works
+    </button>
+
+</section>
+
+
+<!-- =========================
+     WORKS
+========================= -->
+
+<section class="works" id="works">
+
+    <h2>Our Works</h2>
+
+    <div class="products-grid">
+
+
+        <!-- WORK 1 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work1.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">
+                    أَثَر collection
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(1, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 2 FRONT / BACK -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+
+                <button
+                    type="button"
+                    class="image-arrow left"
+                    onclick="changeImage(2, -1)">
+                    &#10094;
+                </button>
+
+                <img
+                    id="product-image-2"
+                    class="product-image"
+                    src="image/work2-front.jpg"
+                    alt="T-Shirt Front">
+
+                <button
+                    type="button"
+                    class="image-arrow right"
+                    onclick="changeImage(2, 1)">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">
+                    أَثَر collection
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(2, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 3 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work3.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(3, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 4 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work4.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(4, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 5 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work5.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(5, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 6 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work6.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(6, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 7 FRONT / BACK -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+
+                <button
+                    type="button"
+                    class="image-arrow left"
+                    onclick="changeImage(7, -1)">
+                    &#10094;
+                </button>
+
+                <img
+                    id="product-image-7"
+                    class="product-image"
+                    src="image/work7-front.jpg"
+                    alt="T-Shirt Front">
+
+                <button
+                    type="button"
+                    class="image-arrow right"
+                    onclick="changeImage(7, 1)">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(7, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 8 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work8.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(8, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 9 FRONT / BACK -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+
+                <button
+                    type="button"
+                    class="image-arrow left"
+                    onclick="changeImage(9, -1)">
+                    &#10094;
+                </button>
+
+                <img
+                    id="product-image-9"
+                    class="product-image"
+                    src="image/work9-front.jpg"
+                    alt="T-Shirt Front">
+
+                <button
+                    type="button"
+                    class="image-arrow right"
+                    onclick="changeImage(9, 1)">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(9, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 10 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work10.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(10, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 11 FRONT / BACK -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+
+                <button
+                    type="button"
+                    class="image-arrow left"
+                    onclick="changeImage(11, -1)">
+                    &#10094;
+                </button>
+
+                <img
+                    id="product-image-11"
+                    class="product-image"
+                    src="image/work11-front.jpg"
+                    alt="T-Shirt Front">
+
+                <button
+                    type="button"
+                    class="image-arrow right"
+                    onclick="changeImage(11, 1)">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(11, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 12 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work12.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(12, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 13 FRONT / BACK -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+
+                <button
+                    type="button"
+                    class="image-arrow left"
+                    onclick="changeImage(13, -1)">
+                    &#10094;
+                </button>
+
+                <img
+                    id="product-image-13"
+                    class="product-image"
+                    src="image/work13-front.jpg"
+                    alt="T-Shirt Front">
+
+                <button
+                    type="button"
+                    class="image-arrow right"
+                    onclick="changeImage(13, 1)">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(13, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 14 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work14.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(14, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 15 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work15.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(15, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 16 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work16.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(16, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 17 FRONT / BACK -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+
+                <button
+                    type="button"
+                    class="image-arrow left"
+                    onclick="changeImage(17, -1)">
+                    &#10094;
+                </button>
+
+                <img
+                    id="product-image-17"
+                    class="product-image"
+                    src="image/work17-front.jpg"
+                    alt="T-Shirt Front">
+
+                <button
+                    type="button"
+                    class="image-arrow right"
+                    onclick="changeImage(17, 1)">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(17, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 18 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work18.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(18, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 19 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work19.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(19, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 20 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work20.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(20, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 21 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work21.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(21, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WORK 22 -->
+
+        <div class="product-card">
+
+            <div class="image-container">
+                <img
+                    class="product-image"
+                    src="image/work22.jpg"
+                    alt="T-Shirt">
+            </div>
+
+            <div class="product-info">
+
+                <h3 class="product-name">T-Shirt</h3>
+
+                <p class="product-description">أَثَر collection</p>
+
+                <div class="product-bottom">
+
+                    <span class="product-price">$25</span>
+
+                    <button
+                        type="button"
+                        class="add-cart"
+                        onclick="addToCart(22, this)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+    <h2>About</h2>
+
+    <p>
+        أَثَر is about creating things that leave a lasting أثر.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        Get in touch with us.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     CART OVERLAY
+========================= -->
+
+<div
+    id="cart-overlay"
+    class="cart-overlay"
+    onclick="closeCart()">
+</div>
+
+
+<!-- =========================
+     CART
+========================= -->
+
+<div id="cart-panel" class="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button
+            type="button"
+            class="close-cart"
+            onclick="closeCart()">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="cart-content">
+
+        <div
+            id="cart-items"
+            class="cart-items">
+        </div>
+
+
+        <div class="cart-summary">
+
+            <div class="cart-total-row">
+
+                <span>Total</span>
+
+                <span>
+                    $<span id="cart-total">0</span>
+                </span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="checkout-button"
+                onclick="openCheckout()">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     CHECKOUT
+========================= -->
+
+<div id="checkout-content" class="checkout-content">
+
+    <div class="checkout-header">
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="closeCheckout()">
+            ←
+        </button>
+
+        <h2>Checkout</h2>
+
+    </div>
+
+
+    <form
+        id="checkout-form"
+        onsubmit="placeOrder(event)">
+
+
+        <!-- FULL NAME -->
+
+        <div class="form-group">
+
+            <label for="full-name">
+                Full Name
+            </label>
+
+            <input
+                id="full-name"
+                type="text"
+                required>
+
+        </div>
+
+
+        <!-- PHONE 1 -->
+
+        <div class="form-group">
+
+            <label for="phone1">
+                Phone Number
+            </label>
+
+            <input
+                id="phone1"
+                type="tel"
+                required>
+
+        </div>
+
+
+        <!-- PHONE 2 -->
+
+        <div class="form-group">
+
+            <label for="phone2">
+                Second Phone Number
+            </label>
+
+            <input
+                id="phone2"
+                type="tel">
+
+        </div>
+
+
+        <!-- STREET -->
+
+        <div class="form-group">
+
+            <label for="street">
+                Street
+            </label>
+
+            <input
+                id="street"
+                type="text"
+                required>
+
+        </div>
+
+
+        <!-- BUILDING -->
+
+        <div class="form-group">
+
+            <label for="building">
+                Building
+            </label>
+
+            <input
+                id="building"
+                type="text"
+                required>
+
+        </div>
+
+
+        <!-- FLOOR -->
+
+        <div class="form-group">
+
+            <label for="floor">
+                Floor
+            </label>
+
+            <input
+                id="floor"
+                type="text"
+                required>
+
+        </div>
+
+
+        <!-- APARTMENT -->
+
+        <div class="form-group">
+
+            <label for="apartment">
+                Apartment
+            </label>
+
+            <input
+                id="apartment"
+                type="text"
+                required>
+
+        </div>
+
+
+        <!-- CITY -->
+
+        <div class="form-group">
+
+            <label for="city">
+                City
+            </label>
+
+            <input
+                id="city"
+                type="text"
+                required>
+
+        </div>
+
+
+        <!-- EXTRA ADDRESS -->
+
+        <div class="form-group">
+
+            <label for="extra-address">
+                Extra Address Details
+            </label>
+
+            <textarea
+                id="extra-address"
+                placeholder="Optional"></textarea>
+
+        </div>
+
+
+        <!-- PAYMENT -->
+
+        <div class="form-group">
+
+            <label>
+                Payment Method
+            </label>
+
+
+            <div class="payment-options">
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Cash on Delivery"
+                        required>
+
+                    <span>
+                        Cash on Delivery
+                    </span>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="InstaPay"
+                        required>
+
+                    <span>
+                        InstaPay
+                    </span>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Visa"
+                        required>
+
+                    <span>
+                        Visa
+                    </span>
+
+                </label>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- TOTAL -->
+
+        <div class="checkout-total">
+
+            <span>Total</span>
+
+            <span>
+                $<span id="checkout-total">0</span>
+            </span>
+
+        </div>
+
+
+        <!-- PLACE ORDER -->
+
+        <button
+            type="submit"
+            class="place-order-button">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 أَثَر — asar
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
